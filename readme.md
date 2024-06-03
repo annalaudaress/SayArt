@@ -9,4 +9,5 @@
 * Adriano Maciel
 * Eudes
 * Iasmin
+* Rafaela Pinheiro Gil Ferreira
 
