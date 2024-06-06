@@ -3,18 +3,37 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Say Art: Cadastro</title>
-  <link rel="stylesheet" href="CSS/style-cadastro.css">
+  <title>Cadastro</title>
 </head>
 
 <body>
+      <!--
+    @Author: Adriano Maciel
+    @Date: 03/06/2024
+    @Reason: Não altere a navbar, exceto se estiver atualizando exclusivamente ela(navbar) e o footer
+    -->
+    <nav class="navbar">
+      <div>
+          <!--
+          @Author: Adriano Maciel
+          @Date: 03/06/2024
+          @Reason: Os hypertextos em caixalta deverão ser substituídos por ícones   
+          -->
+          <a class="feed" href="feed.html">Feed</a>
+          <a class="categoria" href="categorias.html">Categorias</a>
+          <a class="listas" href="listas.html">Listas</a>
+          <a class="chats" href="chats.html">CHATS</a>
+          <a class="login" href="login.html">LOGIN</a>
+          <a class="perfil" href="perfil.html">PERFIL</a>
+      </div>
+  </nav>
+
   <header>
     <h1>Say Art</h1>
   </header>
   <br>
-<main>
+  <main>
   <div class="wrapper">
       <h2>Cadastro</h2>
       <form action="#">
@@ -29,7 +48,7 @@
       <div class="input-box">
         <input type="password" placeholder="Senha" required>
       </div>
-<br>
+    <br>
       <button type="submit" class="btn">Cadastrar</button>
 
       <div class="login-link"></div>
@@ -37,32 +56,25 @@
       <p>Já possui login? <a href="login.html">Fazer Login</a></p>
 
     </form>
-    <img src="IMG/" width="110" height="80" alt="Logo SayArt">
 
-  </div>
+</div>
 </main>
 
-  <footer>
-    <div>
-      <img src="IMG/ g" alt="" width="150" height="80">
-    </div>
-    <div>
-      <p>© Desenvolvido por Say Art - todos os direitos reservados</p>
-      <p>
-    </div>
-    <p>Perguntas Frequentes<a href="perguntasfrequentes.html"></a></p>
-    </div>
-    <div>
-      <p>Fale Conosco</p>
-      <p> <A href="mailto:faleconosco@sayart.com.br">faleconosco@sayart.com.br</A> </P>
-    </div>
-    <div>
-      <p>APOIO</p>
-      <img src="IMG/logo-proz" alt="" width="50" height="50">
-    </div>
+    <!--
+    @Author: Adriano Maciel
+    @Date: 03/06/2024
+    @Reason: Não altere o footer, exceto se estiver atualizando exclusivamente ele(footer) e a navbar
+    -->
+<footer>
+  <p>
+      <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frenquentes</a></li>
+      <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
+      <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
+  </p>
 
-  </footer>
+  <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
 
+</footer>
 </body>
 
 </html>
