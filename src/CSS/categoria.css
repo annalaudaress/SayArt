@@ -1,6 +1,18 @@
 body{
     background-color: #F5F4F4;
 }
+
+
+.logo img {
+    width: 100px; /* largura desejada para a imagem */
+    height: auto; /* altura ajustada automaticamente para manter a proporção */
+    padding: 12px 10px 12px 100px; 
+}
+.links_nav{
+    display: inline;
+   
+}
+
 nav{
-    background-color: #086767;
+    background-color: #75a1a1;
 }
