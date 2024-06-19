@@ -1,18 +1,51 @@
-body{
-    background-color: #F5F4F4;
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* BARRA DE NAVEGAÇÃO */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #75a1a1; /* Cor de fundo da navbar */
+    padding: 10px 20px;
+}
 
 .logo img {
-    width: 100px; /* largura desejada para a imagem */
-    height: auto; /* altura ajustada automaticamente para manter a proporção */
-    padding: 12px 10px 12px 100px; 
-}
-.links_nav{
-    display: inline;
-   
+    width: 100px;
+    height: auto;
+    vertical-align: middle; /* Centraliza verticalmente a imagem */
 }
 
-nav{
-    background-color: #75a1a1;
+.links {
+    flex: 1; /* Ocupa o espaço disponível */
+    display: flex;
+    justify-content: center; /* Alinha os itens à direita */
 }
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 20px 20px 20px 20px; /* Espaçamento entre os links */
+    font-size: 18px;
+
+}
+
+.links a:hover {
+    text-decoration: underline; /* Efeito de sublinhado ao passar o mouse */
+}
+
+.foto_perfil {
+    margin-left: 20px; /* Espaçamento entre o logo e a foto de perfil */
+}
+
+.foto_perfil img {
+    width: 100px; /* Tamanho da imagem do perfil */
+    height: auto;
+    border-radius: 50%; /* Borda arredondada para criar o efeito de foto de perfil */
+}
+
+
