@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/categoria.css">
+    <link rel="stylesheet" href="CSS/categoria.css"> <!-- Inclui o arquivo CSS externo -->
     <title>Categorias</title>
 </head>
-
 <body>
-    <!--
-    @Author: Adriano Maciel
-    @Date: 03/06/2024
-    @Reason: Não altere a navbar, exceto se estiver atualizando exclusivamente ela(navbar) e o footer
-    -->
     <nav class="navbar">
         <div class="logo">
-            <img src="img/log_SayArt.png">
+            <img class="imgLogo" src="img/log_SayArt.png" alt="Logo SayArt">
         </div>
-        <div class="links_nav">
-            <!--
-            @Author: Adriano Maciel
-            @Date: 03/06/2024
-            @Reason: Os hypertextos em caixalta deverão ser substituídos por ícones   
-            -->
+        <div class="links">
             <a class="feed" href="feed.html">Feed</a>
             <a class="categorias" href="categorias.html">Categorias</a>
             <a class="listas" href="listas.html">Listas</a>
             <a class="chats" href="chats.html">Chats</a>
-            <a class="login" href="login.html">Logins</a>
+            <a class="login" href="login.html">Login</a>
             <a class="perfil" href="perfil.html">Perfil</a>
-            
+        </div>
+        <div class="foto_perfil">
+            <img class="imgPerfil" src="img/user-foto.png" alt="Foto de perfil">
         </div>
     </nav>
 
     <div class="main">
-        <h1>Veja as artes disponíveis para você comentar sobre!</h1>
+        <div class="titulo">
+            <h1>Veja as artes disponíveis para você comentar sobre!</h1>
+        </div>
+        <section>
+            <ul>
+                <li><a class="filmes" href="categorias/categoria_filmes.html">FILMES</a></li>
+                <li><a class="livros" href="categorias/categoria_livros.html">LIVROS</a></li>
+                <li><a class="series" href="categorias/categoria_serie.html">SÉRIES</a></li>
+                <li><a class="animes" href="categorias/categoria_anime.html">ANIMES</a></li>
+                <li><a class="mangas" href="categorias/categoria_mangas.html">MANGÁS</a></li>
+            </ul>
+        </section>
     </div>
 
-    <section>
-        <ul>
-            <li><a class="filmes" href="categorias/categoria_filmes.html">FILMES</a></li>
-            <li><a class="livros" href="categorias/categoria_livros.html">LIVROS</a></li>
-            <li><a class="series" href="categorias/categoria_serie.html">SÉRIES</a></li>
-            <li><a class="animes" href="categorias/categoria_anime.html">ANIMES</a></li>
-            <li><a class="mangas" href="categorias/categoria_mangas.html">MANGÁS</a></li>
-        </ul>
-    </section>
-    <!--
-    @Author: Adriano Maciel
-    @Date: 03/06/2024
-    @Reason: Não altere o footer, exceto se estiver atualizando exclusivamente ele(footer) e a navbar
-    -->
     <footer>
-        <p>
-            <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frenquentes</a></li>
-            <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
-            <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
-        </p>
-
-        <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
-
+        <div class="footer-content">
+            <div class="linksFooter">
+                <ul>
+                    <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frequentes</a></li>
+                    <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
+                    <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
+                </ul>
+            </div>
+            <div class="paragrafoFooter">
+                <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
+            </div>
+            <div class="logoFooter">
+                <img class="imgFooter" src="img/log_SayArt.png" alt="Logo SayArt">
+            </div>
+        </div>
     </footer>
 </body>
-
 </html>
