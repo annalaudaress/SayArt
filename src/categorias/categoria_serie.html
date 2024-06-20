@@ -4,34 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/SayArt/src/CSS/navFoooter.css">
     <title>Categorias</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 
 <body>
-    <!--
-    @Author: Adriano Maciel
-    @Date: 03/06/2024
-    @Reason: Não altere a navbar, exceto se estiver atualizando exclusivamente ela(navbar) e o footer
-    -->
+    <!-- Inicio NavBar -->
     <nav class="navbar">
         <div class="logo">
-            <img src="/SayArt/src/img/log_SayArt.jpg">
+            <img class="imgLogo" src="img/log_SayArt.png" alt="Logo SayArt">
         </div>
-        <div>
-            <!--
-            @Author: Adriano Maciel
-            @Date: 03/06/2024
-            @Reason: Os hypertextos em caixalta deverão ser substituídos por ícones   
-            -->
-            <a class="feed" href="../feed.html">Feed</a>
-            <a class="categorias" href="../categorias.html">Categorias</a>
-            <a class="listas" href="../listas.html">Listas</a>
-            <a class="chats" href="../chats.html">Chats</a>
-            <a class="login" href="../login.html">Login</a>
-            <a class="perfil" href="../perfil.html">Perfil</a>
+        <div class="links">
+            <a class="feed" href="feed.html">Feed</a>
+            <a class="categorias" href="categorias.html">Categorias</a>
+            <a class="listas" href="listas.html">Listas</a>
+        </div>
+
+        <!--Imagens Nav-Bar-->
+        <div class="icon-chats">
+            <a href="chats.html">
+                <img src="../img/chat.png" alt="Ícone Chats">
+            </a>
+        </div>
+        <div class="foto-perfil">
+            <a class="perfil" href="perfil.html">
+                <img class="imgPerfil" src="../img/user-foto.png" alt="Foto de perfil">
+            </a>
+        </div>
+        <!--Botão Cadastro-Login Nav-Bar-->
+        <div class="b-login">
+            <button>
+                <a class="login" href="login.html">Login</a>
+            </button>
         </div>
     </nav>
+    <!-- Final NavBar -->
 
     
     <section class="buscar">
