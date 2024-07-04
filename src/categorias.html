@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/categoria.css"> <!-- Inclui o arquivo CSS externo -->
+    <link rel="stylesheet" href="/SayArt/src/CSS/categoria.css "> <!-- Inclui o arquivo CSS externo -->
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
+    
     <title>Categorias</title>
 
 </head>
@@ -42,10 +46,19 @@
     <!-- Final NavBar -->
 
     <div class="main">
+
+         <section class="buscar">
+            <form>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="O que você está procurando?">
+                <button type="submit">Buscar</button>
+            </form>
+         </section>
+        
         <div class="titulo">
-            <h1>Veja as artes disponíveis para você comentar sobre!</h1>
+            <h1>Veja as categorias disponíveis para você comentar sobre!</h1>
         </div>
-        <section>
+        <section class="listas">
             <ul>
                 <li><a class="filmes" href="categorias/categoria_filmes.html">FILMES</a></li>
                 <li><a class="livros" href="categorias/categoria_livros.html">LIVROS</a></li>
@@ -55,6 +68,8 @@
             </ul>
         </section>
     </div>
+
+    <!--FOOTER-->
 
     <footer>
         <div class="footer-content">
