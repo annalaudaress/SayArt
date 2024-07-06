@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
     <link rel="stylesheet" href="/SayArt/src/CSS/style.css">
+    <link rel="stylesheet" href="/SayArt/src/CSS/categorias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
+    
 
 </head>
 
@@ -13,7 +18,7 @@
     <!-- Inicio NavBar -->
     <nav class="navbar">
         <div class="logo">
-            <img class="imgLogo" src="img/log_SayArt.png" alt="Logo SayArt">
+            <img class="imgLogo" src="/SayArt/src/img/log_SayArt.png" alt="Logo SayArt">
         </div>
         <div class="links">
             <a class="feed" href="feed.html">Feed</a>
@@ -24,7 +29,7 @@
         <!--Imagens Nav-Bar-->
         <div class="icon-chats">
             <a href="chats.html">
-                <img src="../img/chat.png" alt="Ícone Chats">
+                <img src="/SayArt/img/chat.png" alt="Ícone Chats">
             </a>
         </div>
         <div class="foto-perfil">
@@ -52,33 +57,50 @@
 
     <section class="opcoes_principais">
         <div class="main">
-            <div>
+            <div class="titulo">
                 <h1>Veja o que está bombando no mundo das Séries</h1>
         
             </div>
-            <div class="series_comentadas">
+            <div class="imagens comentadas">
                 <h2>Séries mais comentadas</h2>
                 <img src="/SayArt/img/categoria/serie/serie1.jpg" alt="Game of Thrones">
                 <img src="/SayArt/img/categoria/serie/serie2.jpg" alt="S.W.A.T">
                 <img src="/SayArt/img/categoria/serie/serie3.jpg" alt="HALO">
                 <img src="/SayArt/img/categoria/serie/serie4.jpg" alt="O Regime">
                 <img src="/SayArt/img/categoria/serie/serie5.jpg" alt="Os Aneis do Poder">
+                <img src="/SayArt/img/categoria/serie/serie8.jpg" alt="Criminal Minds">
+                <img src="/SayArt/img/categoria/serie/serie7.jpg" alt="Greys Anatomy">
+                <img src="/SayArt/img/categoria/serie/serie6.jpg" alt="The Boys">
+                <img src="/SayArt/img/categoria/serie/serie10.jpg" alt="A casa do Dragão">
+                <img src="/SayArt/img/categoria/serie/serie9.jpg" alt="CSI">               
             </div>
-            <div class="series_avaliadas">
+
+            <div class="imagens avaliadas">
                 <h2>Séries mais bem avaliadas</h2>
                 <img src="/SayArt/img/categoria/serie/serie6.jpg" alt="The Boys">
-                <img src="/SayArt/img/categoria/serie/serie7.png" alt="Greys Anatomy">
+                <img src="/SayArt/img/categoria/serie/serie7.jpg" alt="Greys Anatomy">
                 <img src="/SayArt/img/categoria/serie/serie8.jpg" alt="Criminal Minds">
                 <img src="/SayArt/img/categoria/serie/serie9.jpg" alt="CSI">
                 <img src="/SayArt/img/categoria/serie/serie10.jpg" alt="A casa do Dragão">
+                <img src="/SayArt/img/categoria/serie/serie1.jpg" alt="Game of Thrones">
+                <img src="/SayArt/img/categoria/serie/serie5.jpg" alt="Os Aneis do Poder">
+                <img src="/SayArt/img/categoria/serie/serie2.jpg" alt="S.W.A.T">
+                <img src="/SayArt/img/categoria/serie/serie4.jpg" alt="O Regime">
+                <img src="/SayArt/img/categoria/serie/serie3.jpg" alt="HALO">
             </div>
-            <div class="series_recentes">
+            
+            <div class="imagens recentes">
                 <h2>Séries recentes</h2>
                 <img src="/SayArt/img/categoria/serie/serie1.jpg" alt="Game of Thrones">
                 <img src="/SayArt/img/categoria/serie/serie5.jpg" alt="Os Aneis do Poder">
                 <img src="/SayArt/img/categoria/serie/serie8.jpg" alt="Criminal Minds">
                 <img src="/SayArt/img/categoria/serie/serie2.jpg" alt="S.W.A.T">
                 <img src="/SayArt/img/categoria/serie/serie4.jpg" alt="O Regime">
+                <img src="/SayArt/img/categoria/serie/serie6.jpg" alt="The Boys">
+                <img src="/SayArt/img/categoria/serie/serie7.jpg" alt="Greys Anatomy">
+                <img src="/SayArt/img/categoria/serie/serie8.jpg" alt="Criminal Minds">
+                <img src="/SayArt/img/categoria/serie/serie9.jpg" alt="CSI">
+                <img src="/SayArt/img/categoria/serie/serie10.jpg" alt="A casa do Dragão">
             </div>  
         </div>
     </section>
@@ -89,13 +111,21 @@
     @Reason: Não altere o footer, exceto se estiver atualizando exclusivamente ele(footer) e a navbar
     -->
     <footer>
-        <p>
-            <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frenquentes</a></li>
-            <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
-            <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
-        </p>
-
-        <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
+        <div class="footer-content">
+            <div class="linksFooter">
+                <ul>
+                    <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frequentes</a></li>
+                    <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
+                    <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
+                </ul>
+            </div>
+            <div class="paragrafoFooter">
+                <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
+            </div>
+            <div class="logoFooter">
+                <img class="imgFooter" src="/SayArt/src/img/log_SayArt.png" alt="Logo SayArt">
+            </div>
+        </div>
 
     </footer>
 </body>
