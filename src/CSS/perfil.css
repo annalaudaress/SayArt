@@ -17,13 +17,20 @@
     display: inline-flex;
     justify-content: space-around;
     margin-left: 30%;
+}
 
+.area-user .follow p{
+    font-size: 22px;
 }
 
 .area-user .follow .p-follow{
     max-width: 50px;
     align-items: center;
+    margin-left: 15px;
+}
 
+.area-user .follow .num{
+    margin-left: 26px;
 }
 
 .area-user button{
@@ -31,14 +38,14 @@
     height: 25px;
     width: 110px;
     border-radius: 20px;
-    background-color: #086767; 
-    opacity: 60%;
+    background-color: #51afaf; 
+    color: white;
+    border: none;
 }
 
 .area-user button a{
     text-decoration: none;
-    color: white
-    
+    color: white;
 }
 
 .nome{
@@ -66,6 +73,17 @@
     border-radius: 0px 0px 20px 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.navbar-perfil ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-perfil ul li{
+    padding: 90px;
+    justify-content: center;
 }
 
 .navbar-perfil a{
@@ -73,12 +91,33 @@
     color: white;
     font-size: 18px;
 }
+
+.navbar-perfil a:hover{
+    text-decoration: underline;
+}
+
+
 /* FINAL AREA DO USUÁRIO */
 
 /* INICIO OBRAS FAVORITAS */
 .obras-fav{
     margin: 40px 70px;
 }
+
+.card{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.card img{
+    width: 200px;
+    height: 270px;
+}
+
+.seta{
+    clip-path: polygon(78% 23%, 100% 50%, 76% 75%, 67% 75%, 91% 50%, 69% 23%);
+}
+
 /* FINAL OBRAS FAVORITAS */
 
 /* INICIO ATIVIDADES RECENTES */
@@ -96,10 +135,33 @@
 
 .atv-recente .post{
     display: flex;
-    
 }
 
 h1, h2{
     margin: 70px 10% 20px;
     font-size: 25px;
+}
+
+.post aside{
+    margin: 40px 70px 5px 0px;
+}
+
+.post article{
+    margin: 20px;
+}
+
+.ident{
+    display: flex;
+}
+
+.ident p{
+    margin-right: 10px;
+}
+
+.ident .usuario{
+    margin-top: 5px;
+}
+
+.text-atv{
+    margin-top: 12px;
 }

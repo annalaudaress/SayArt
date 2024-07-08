@@ -50,17 +50,19 @@
             <p class="nome">Nome</p>
             <p class="usuario">@username</p>
             <p class="bio-user">Lorem Ipsum has been the industry's standard dummy text ever since the 1500S.</p>
-            <button class="editar-perfil">Editar perfil</button>
+            <button class="editar-perfil">
+                <a href="#">Editar perfil</a>
+            </button>
         </div>
 
         <div class="follow">
             <div class="p-followers">
-                <p>100</p>
+                <p class="num">100</p>
                 <p>seguidores</p>
             </div>
 
             <div class="p-follow">
-                <p>100</p>
+                <p class="num">100</p>
                 <p>seguindo</p>
             </div>
         </div>
@@ -68,10 +70,12 @@
 
     <nav class="navbar-perfil">
         <div class="link-nav-perfil">
-            <a class="perfil" href="feed.html">Perfil</a>
-            <a class="atividade" href="categorias.html">Atividade</a>
-            <a class="reviews" href="listas.html">Reviews</a>
-            <a class="listas" href="chats.html">Listas</a>
+            <ul>
+                <li><a class="perfil" href="feed.html">Perfil</a></li>
+                <li><a class="atividade" href="categorias.html">Atividade</a></li>
+                <li><a class="reviews" href="listas.html">Reviews</a></li>
+                <li><a class="listas" href="chats.html">Listas</a></li>
+            </ul>
         </div>
     </nav>
     <!-- FINAL ÁREA DO USUÁRIO -->
@@ -79,11 +83,28 @@
     <!-- INÍCIO OBRAS FAVORITAS -->
     <h1>OBRAS FAVORITAS</h1>
     <section class="obras-fav">
-        <img src="../img/biblioteca.jpg" alt="Capa Livro Biblioteca da Meia-Noite">
-        <img src="../img/castelo-magico.jpeg" alt="Capa Filme Castelo Mágico">
-        <img src="../img/carmila.webp" alt="Capa Livro Carmilla">
-        <img src="../img/memorias-postumas.jpg" alt="Capa Livro Memórias Póstumas">
-        <img src="../img/naruto.webp" alt="Capa Anime Naruto">
+    
+        <div class="card">
+            <img class="img-card" src="../img/castelo-magico.jpeg" alt="Capa Filme Castelo Mágico" width="100%">
+        </div>
+
+        <div class="card">
+            <img class="img-card" src="../img/carmila.webp" alt="Capa Livro Carmilla" width="100%">
+        </div>
+
+        <div class="card">
+            <img class="img-card" src="../img/memorias-postumas.jpg" alt="Capa Livro Memórias Póstumas" width="100%">
+        </div>
+
+        <div class="card">
+            <img class="img-card" src="../img/naruto.webp" alt="Capa Anime Naruto" width="100%">
+        </div>
+
+        <div class="card">
+            <div class="seta">
+                <a href="#"><img src="../img/seta.png" alt=""></a>
+            </div>
+        </div>
     </section>
     <!-- FINAL OBRAS FAVORITAS -->
 
@@ -91,21 +112,41 @@
     <h2>ATIVIDADE RECENTE</h2>
     <section class="atv-recente">
         <div class="post">
-            <img src="../img/user-foto.png" alt="Foto de Perfil">
-            <p class="nome">Nome</p>
-            <p class="usuario">@username</p>
-            <p class="text-atv">
-                Lorem ipsum dolor sit amet. In voluptas harum sed deserunt molestiae qui odit consequatur non quia impedit et asperiores excepturi non voluptatem sint. A galisum ducimus est accusantium natus et doloremque suscipit cum molestias numquam? Eum delectus rerum sed voluptas quia sed illo officia sed nesciunt voluptatem ut possimus eligendi. Ad voluptatem officia sed accusantium sunt ut dolores dolores hic facere repellat.
-            </p>
+            <article>
+                <img src="../img/user-foto.png" alt="Foto de Perfil">
+            </article>
+            <aside>
+                <div class="ident">
+                    <p class="nome">Nome</p>
+                    <p class="usuario">@username</p>
+                </div>
+                    <p class="post-sobre">
+                        <b>SOBRE "NOME DA OBRA"</b>
+                    </p>
+                
+                <p class="text-atv">
+                    Lorem ipsum dolor sit amet. In voluptas harum sed deserunt molestiae qui odit consequatur non quia impedit et asperiores excepturi non voluptatem sint. A galisum ducimus est accusantium natus et doloremque suscipit cum molestias numquam? Eum delectus rerum sed voluptas quia sed illo officia sed nesciunt voluptatem ut possimus eligendi. Ad voluptatem officia sed accusantium sunt ut dolores dolores hic facere repellat.
+                </p>
+            </aside>
         </div>
         <hr>
         <div class="post">
-            <img src="../img/user-foto.png" alt="Foto de Perfil">
-            <p class="nome">Nome</p>
-            <p class="usuario">@username</p>
-            <p class="text-atv">
-                Lorem ipsum dolor sit amet. In voluptas harum sed deserunt molestiae qui odit consequatur non quia impedit et asperiores excepturi non voluptatem sint. A galisum ducimus est accusantium natus et doloremque suscipit cum molestias numquam? Eum delectus rerum sed voluptas quia sed illo officia sed nesciunt voluptatem ut possimus eligendi. Ad voluptatem officia sed accusantium sunt ut dolores dolores hic facere repellat.
-            </p>
+            <article>
+                <img src="../img/user-foto.png" alt="Foto de Perfil">
+            </article>
+            <aside>
+                <div class="ident">
+                    <p class="nome">Nome</p>
+                    <p class="usuario">@username</p>
+                </div>
+                    <p class="post-sobre">
+                        <b>SOBRE "NOME DA OBRA"</b>
+                    </p>
+                
+                <p class="text-atv">
+                    Lorem ipsum dolor sit amet. In voluptas harum sed deserunt molestiae qui odit consequatur non quia impedit et asperiores excepturi non voluptatem sint. A galisum ducimus est accusantium natus et doloremque suscipit cum molestias numquam? Eum delectus rerum sed voluptas quia sed illo officia sed nesciunt voluptatem ut possimus eligendi. Ad voluptatem officia sed accusantium sunt ut dolores dolores hic facere repellat.
+                </p>
+            </aside>
         </div>
     </section>
     <!-- FINAL ATIVIDADES RECENTES -->
