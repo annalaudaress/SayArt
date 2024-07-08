@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/categoria.css"> <!-- Inclui o arquivo CSS externo -->
+    <link rel="stylesheet" href="/SayArt/src/CSS/homeCategoria.css"> <!-- Inclui o arquivo CSS externo -->
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
+    
     <title>Categorias</title>
 
 </head>
@@ -42,19 +46,30 @@
     <!-- Final NavBar -->
 
     <div class="main">
-        <div class="titulo">
-            <h1>Veja as artes disponíveis para você comentar sobre!</h1>
+
+         <section class="buscar">
+            <form>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="O que você está procurando?">
+                <button type="submit">Buscar</button>
+            </form>
+         </section>
+        
+        <div class="tituloCategoria">
+            <h1>Veja as categorias disponíveis para você comentar sobre!</h1>
         </div>
-        <section>
+        <section class="listas">
             <ul>
+                <li><a class="animes" href="categorias/categoria_anime.html">ANIMES</a></li>
                 <li><a class="filmes" href="categorias/categoria_filmes.html">FILMES</a></li>
                 <li><a class="livros" href="categorias/categoria_livros.html">LIVROS</a></li>
                 <li><a class="series" href="categorias/categoria_serie.html">SÉRIES</a></li>
-                <li><a class="animes" href="categorias/categoria_anime.html">ANIMES</a></li>
                 <li><a class="mangas" href="categorias/categoria_mangas.html">MANGÁS</a></li>
             </ul>
         </section>
     </div>
+
+    <!--FOOTER-->
 
     <footer>
         <div class="footer-content">
@@ -69,7 +84,7 @@
                 <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
             </div>
             <div class="logoFooter">
-                <img class="imgFooter" src="img/log_SayArt.png" alt="Logo SayArt">
+                <img class="imgFooter" src="/SayArt/src/img/log_SayArt.png" alt="Logo SayArt">
             </div>
         </div>
     </footer>

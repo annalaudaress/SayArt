@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
+    <link rel="stylesheet" href="/SayArt/src/CSS/style.css">
+    <link rel="stylesheet" href="/SayArt/src/CSS/categorias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 
@@ -14,18 +18,18 @@
     <!-- Inicio NavBar -->
     <nav class="navbar">
         <div class="logo">
-            <img class="imgLogo" src="img/log_SayArt.png" alt="Logo SayArt">
+            <img class="imgLogo" src="/SayArt/src/img/log_SayArt.png" alt="Logo SayArt">
         </div>
         <div class="links">
             <a class="feed" href="feed.html">Feed</a>
-            <a class="categorias" href="categorias.html">Categorias</a>
+            <a class="categorias" href="/SayArt/src/categorias.html">Categorias</a>
             <a class="listas" href="listas.html">Listas</a>
         </div>
 
         <!--Imagens Nav-Bar-->
         <div class="icon-chats">
             <a href="chats.html">
-                <img src="../img/chat.png" alt="Ícone Chats">
+                <img src="/SayArt/img/chat.png" alt="Ícone Chats">
             </a>
         </div>
         <div class="foto-perfil">
@@ -42,6 +46,7 @@
     </nav>
     <!-- Final NavBar -->
 
+    <!-- Botão -->
     <section class="buscar">
         <form>
             <label for="search"></label>
@@ -52,35 +57,53 @@
 
     <section class="opcoes_principais">
         <div class="main">
-            <div>
+            <div class="titulo">
                 <h1>Veja o que está bombando no mundo dos Animes</h1>
         
             </div>
-            <div class="anime_comentados">
+            <div class="imagens comentadas">
                 <h2>Animes mais comentados</h2>
-                <img src="/SayArt/img/categoria/anime/anime1.png" alt="cavaleiros dos zodiacos">
+                <img src="/SayArt/img/categoria/anime/anime1.jpg" alt="cavaleiros dos zodiacos">
                 <img src="/SayArt/img/categoria/anime/anime2.jpg" alt="death note">
                 <img src="/SayArt/img/categoria/anime/anime3.jpg" alt="Full Metal Alchemist">
                 <img src="/SayArt/img/categoria/anime/anime4.jpg" alt="JoJos Bizarre Adventure">
                 <img src="/SayArt/img/categoria/anime/anime5.jpg" alt=" Blade Dance - Of the elementalers">
+                <img src="/SayArt/img/categoria/anime/anime1.jpg" alt="cavaleiros dos zodiacos">
+                <img src="/SayArt/img/categoria/anime/anime2.jpg" alt="death note">
+                <img src="/SayArt/img/categoria/anime/anime3.jpg" alt="Full Metal Alchemist">
+                <img src="/SayArt/img/categoria/anime/anime2.jpg" alt="death note">
+                <img src="/SayArt/img/categoria/anime/anime3.jpg" alt="Full Metal Alchemist">
+                
             </div>
 
-            <div class="animes_avaliados">
+            <div class="imagens avaliados">
                 <h2>Animes mais bem avaliados</h2>
                 <img src="/SayArt/img/categoria/anime/anime6.jpg" alt="Attack on Titan">
-                <img src="/SayArt/img/categoria/anime/anime7.png" alt="pokemon">
-                <img src="/SayArt/img/categoria/anime/anime8.png" alt="Nep Ege">
+                <img src="/SayArt/img/categoria/anime/anime7.jpg" alt="pokemon">
+                <img src="/SayArt/img/categoria/anime/anime8.jpg" alt="Nep Ege">
                 <img src="/SayArt/img/categoria/anime/anime9.jpg" alt="naruto">
                 <img src="/SayArt/img/categoria/anime/anime10.jpg" alt="dragon ball z">
+                <img src="/SayArt/img/categoria/anime/anime6.jpg" alt="Attack on Titan">
+                <img src="/SayArt/img/categoria/anime/anime7.jpg" alt="pokemon">
+                <img src="/SayArt/img/categoria/anime/anime8.jpg" alt="Nep Ege">
+                <img src="/SayArt/img/categoria/anime/anime7.jpg" alt="pokemon">
+                <img src="/SayArt/img/categoria/anime/anime8.jpg" alt="Nep Ege">
+                
             </div>
 
-            <div class="Animes_recentes">
+            <div class="imagens recentes">
                 <h2>Animes recentes</h2>
                 <img src="/SayArt/img/categoria/anime/anime2.jpg" alt="Death Note">
                 <img src="/SayArt/img/categoria/anime/anime8.jpg" alt="Nep Ege">
                 <img src="/SayArt/img/categoria/anime/anime3.jpg" alt="Full Metal Alchemist">
                 <img src="/SayArt/img/categoria/anime/anime7.jpg" alt="pokemon">
                 <img src="/SayArt/img/categoria/anime/anime4.jpg" alt="JoJos Bizarre Adventure">
+                <img src="/SayArt/img/categoria/anime/anime2.jpg" alt="Death Note">
+                <img src="/SayArt/img/categoria/anime/anime8.jpg" alt="Nep Ege">
+                <img src="/SayArt/img/categoria/anime/anime3.jpg" alt="Full Metal Alchemist">
+                <img src="/SayArt/img/categoria/anime/anime7.jpg" alt="pokemon">
+                <img src="/SayArt/img/categoria/anime/anime8.jpg" alt="Nep Ege">
+             
             </div>  
         </div>
     </section>
@@ -91,14 +114,21 @@
     @Reason: Não altere o footer, exceto se estiver atualizando exclusivamente ele(footer) e a navbar
     -->
     <footer>
-        <p>
-            <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frenquentes</a></li>
-            <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
-            <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
-        </p>
-
-        <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
-
+        <div class="footer-content">
+            <div class="linksFooter">
+                <ul>
+                    <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frequentes</a></li>
+                    <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
+                    <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
+                </ul>
+            </div>
+            <div class="paragrafoFooter">
+                <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
+            </div>
+            <div class="logoFooter">
+                <img class="imgFooter" src="/SayArt/src/img/log_SayArt.png" alt="Logo SayArt">
+            </div>
+        </div>
     </footer>
 </body>
 
