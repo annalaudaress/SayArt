@@ -7,11 +7,12 @@
     <title>Perfil</title>
 
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/perfil.css">
 
 </head>
 
 <body>
-    <!-- Inicio NavBar -->
+    <!-- INÍCIO NAVBAR -->
     <nav class="navbar">
         <div class="logo">
             <img class="imgLogo" src="img/log_SayArt.png" alt="Logo SayArt">
@@ -40,42 +41,59 @@
             </button>
         </div>
     </nav>
-    <!-- Final NavBar -->
+    <!-- FINAL NAVBAR -->
 
-    <div class="area-user">
-    <img src="../img/user-foto.png" alt="Foto de Perfil">
-    <h1 class="nome">Nome</h1>
-    <h2 class="usuario">@username</h2>
-    <p class="bio-user">Lorem Ipsum has been the industry's standard dummy text ever since the 1500S.</p>
-    <button class="editar-perfil">Editar perfil</button>
-    <p>100 <br> seguidores</p>
-    <p>100 <br> seguindo</p>
-    </div>
+    <!-- INÍCIO ÁREA DO USUÁRIO -->
+    <main class="area-user">
+        <img src="../img/user-foto.png" alt="Foto de Perfil">
+        <div class="about">
+            <p class="nome">Nome</p>
+            <p class="usuario">@username</p>
+            <p class="bio-user">Lorem Ipsum has been the industry's standard dummy text ever since the 1500S.</p>
+            <button class="editar-perfil">Editar perfil</button>
+        </div>
+
+        <div class="follow">
+            <div class="p-followers">
+                <p>100</p>
+                <p>seguidores</p>
+            </div>
+
+            <div class="p-follow">
+                <p>100</p>
+                <p>seguindo</p>
+            </div>
+        </div>
+    </main>
 
     <nav class="navbar-perfil">
-        <div>
+        <div class="link-nav-perfil">
             <a class="perfil" href="feed.html">Perfil</a>
             <a class="atividade" href="categorias.html">Atividade</a>
             <a class="reviews" href="listas.html">Reviews</a>
             <a class="listas" href="chats.html">Listas</a>
         </div>
     </nav>
+    <!-- FINAL ÁREA DO USUÁRIO -->
     
+    <!-- INÍCIO OBRAS FAVORITAS -->
+    <h1>OBRAS FAVORITAS</h1>
     <section class="obras-fav">
-        <h1>OBRAS FAVORITAS</h1>
         <img src="../img/biblioteca.jpg" alt="Capa Livro Biblioteca da Meia-Noite">
         <img src="../img/castelo-magico.jpeg" alt="Capa Filme Castelo Mágico">
         <img src="../img/carmila.webp" alt="Capa Livro Carmilla">
         <img src="../img/memorias-postumas.jpg" alt="Capa Livro Memórias Póstumas">
         <img src="../img/naruto.webp" alt="Capa Anime Naruto">
     </section>
+    <!-- FINAL OBRAS FAVORITAS -->
 
+    <!-- INÍCIO ATIVIDADES RECENTES -->
+    <h2>ATIVIDADE RECENTE</h2>
     <section class="atv-recente">
-        <h1>ATIVIDADE RECENTE</h1>
         <div class="post">
             <img src="../img/user-foto.png" alt="Foto de Perfil">
-            <h1 class="nome">Nome</h1>
-            <h2 class="usuario">@username</h2>
+            <p class="nome">Nome</p>
+            <p class="usuario">@username</p>
             <p class="text-atv">
                 Lorem ipsum dolor sit amet. In voluptas harum sed deserunt molestiae qui odit consequatur non quia impedit et asperiores excepturi non voluptatem sint. A galisum ducimus est accusantium natus et doloremque suscipit cum molestias numquam? Eum delectus rerum sed voluptas quia sed illo officia sed nesciunt voluptatem ut possimus eligendi. Ad voluptatem officia sed accusantium sunt ut dolores dolores hic facere repellat.
             </p>
@@ -83,14 +101,16 @@
         <hr>
         <div class="post">
             <img src="../img/user-foto.png" alt="Foto de Perfil">
-            <h1 class="nome">Nome</h1>
-            <h2 class="usuario">@username</h2>
+            <p class="nome">Nome</p>
+            <p class="usuario">@username</p>
             <p class="text-atv">
                 Lorem ipsum dolor sit amet. In voluptas harum sed deserunt molestiae qui odit consequatur non quia impedit et asperiores excepturi non voluptatem sint. A galisum ducimus est accusantium natus et doloremque suscipit cum molestias numquam? Eum delectus rerum sed voluptas quia sed illo officia sed nesciunt voluptatem ut possimus eligendi. Ad voluptatem officia sed accusantium sunt ut dolores dolores hic facere repellat.
             </p>
         </div>
     </section>
+    <!-- FINAL ATIVIDADES RECENTES -->
 
+    <!-- INÍCIO FOOTER -->
     <footer>
         <div class="footer-content">
             <div class="linksFooter">
@@ -108,6 +128,7 @@
             </div>
         </div>
     </footer>
+    <!-- FINAL FOOTER -->
 </body>
 
 </html>
