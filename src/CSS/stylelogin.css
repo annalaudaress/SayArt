@@ -1,0 +1,205 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #75a1a1; /* Cor de fundo da navbar */
+    padding: 0% 8%;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    vertical-align: middle; /* Centraliza verticalmente a imagem */
+}
+
+.links {
+    flex: 1; /* Ocupa o espaço disponível */
+    display: flex;
+    justify-content: center; /* Alinha os itens à direita */
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 20px 20px 20px 20px; /* Espaçamento entre os links */
+    font-size: 20px;
+
+}
+
+.links a:hover {
+    text-decoration: underline; /* Efeito de sublinhado ao passar o mouse */
+}
+
+.foto-perfil {
+    margin: 0px 20px 0px; /* Espaçamento entre o chat, foto de perfil e button login */
+}
+
+.foto-perfil img {
+    width: 70px; /* Tamanho da imagem do perfil */
+    height: auto;
+    border-radius: 50%; /* Borda arredondada para criar o efeito de foto de perfil */
+}
+
+.icon-chats img{
+    width: 70px; /* Tamanho da imagem do perfil */
+    height: auto;
+    border-radius: 50%; /* Borda arredondada para criar o efeito de foto de perfil */
+}
+
+.b-login button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px; 
+    background-color: white;
+}
+
+.b-login button a{
+    text-decoration: none;
+    color: #75a1a1;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem 0;
+    width: 330px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+form input {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 1rem;
+    background-color: #e3e0e0;
+    border: 1px solid rgb(196, 189, 189);
+}
+
+form input::placeholder {
+    color: #000;
+    font-size: 15px;
+}
+
+form button {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+#forgot-password {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.new-member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-member a {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.3rem 0.7rem;
+}
+
+.wrapper img {
+    padding-top: 1rem;
+}
+h1 {
+    width: 115%;
+    text-align:center;
+}
+
+
+.wrapper h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+
+.wrapper {
+    background-color: rgba(217, 217, 217, 0.5);
+    backdrop-filter: blur(3px);
+    padding: 5rem;
+    box-shadow: 0 0 10px #2ec8d0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 37rem;
+    width: 30rem;
+    border-radius: 20px;
+}
+
+/* FOOTER*/
+
+footer{
+    background-color: #75a1a1; /* Cor de fundo igual à da barra de navegação */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    justify-content: space-between; /* Alinha os itens à esquerda, no meio e à direita */
+}
+
+.footer-content{
+    max-width: 1200px; /* Largura máxima do conteúdo do footer */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.linksFooter ul{
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.linksFooter ul li{
+    display: block; /* Exibe os itens da lista em linha */
+    margin-right: 200px; /* Espaçamento entre os itens */
+}
+
+.linksFooter ul li a{
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.linksFooter ul li a:hover{
+    text-decoration: underline;
+}
+
+.p-Footer{
+    flex: 1; /* Ocupa o espaço disponível restante */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.logoFooter{
+    margin-left: 200px; /* Empurra a logo para a direita */
+}
+
+.logoFooter img{
+    width: 100px; /* Tamanho da imagem da logo */
+    height: auto; /* Altura automática para manter a proporção */
+}
