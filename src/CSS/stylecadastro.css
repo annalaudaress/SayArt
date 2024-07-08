@@ -66,188 +66,93 @@
     color: #75a1a1;
 }
 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem 0;
+    width: 330px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+form input {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 1rem;
+    background-color: #e3e0e0;
+    border: 1px solid rgb(196, 189, 189);
+}
+
+form input::placeholder {
+    color: #000;
+    font-size: 15px;
+}
+
+form button {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #164c51;;
+    color: #fff;
+    font-weight: bold;
+}
+
+#forgot-password {
+    text-decoration: none;
+    color: #164c51;
+    font-size: 13px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.new-member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-member a {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.3rem 0.7rem;
+}
+
+.wrapper img {
+    padding-top: 1rem;
+}
+h1 {
+    width: 115%;
+    text-align:center;
+}
+
+
+.wrapper h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+
 .wrapper {
     
     background-color: rgba(78, 78, 78, 0.068);
     border: px solid rgb(247, 246, 246);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px #2ec8d0;
-    color: #ffffff;
+    color: #000000;
     height: 33.5rem;
-    width: 30rem;
+    width: 100rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 19px;
-    
-}
-
-.wrapper h2 {
-    font-size: 36px;
-    text-align: center;
-    color: black;
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 15px;
-
-}
-
-.wrapper .input-box {
-    width: 100%;
-    height: 30px;
-    margin: 20px ;
-}
-
-.input-box input {
-    width: 87%;
-    height: 49px;
-    background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    font-size: 17px;
-    color: black;
-    padding: 20px 45px 20px 20px;
-    margin-left: 23px;
-}
-
-.input-box input::placeholder {
-    color: black;
-}
-
-.wrapper p a {
-    background-color: #ffffff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 0.3rem 0.7rem;
-    font-weight: 550;
-    border-color: #000;
-
-
-}
-
-.wrapper p {
-    color: black;
-    text-align: center;
-    font-weight: 550;
-}
-.wrapper img {
-    padding-top: 10px;
-    margin-left: 7%;
-    width: 25%;
-    margin-top: 7px;
-    
-}
-
-.btn {
-    background-color: #164c51;
-    text-align: center;
-    width: 50%;
-    height: 45px;
-    border: none;
-    outline: none;
-    border-radius: 45px;
-    color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 800;
-}
-
-header {
-    display: flex;
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    align-items: center;
-    padding: 1rem 0;
-    justify-content: space-between;
-
-
-}
-
-h1 {
-    text-align: center;
-    border-radius: 20px;
-    background-color: #fff;
-    color: #000;
-    width: 50%;
-    margin: 0 auto;
-    font-weight: 400;
-}
-
-footer {
-    display: flex;
-    background-color: #D9D9D9;
-    justify-content: space-between;
-    padding: 30px;
-    
-    flex: 1 1 100vw;
-    align-items: center;
-    font-size: 15px;
-    height: 100px;
-}
-
-p div footer {
-    font-size: 16px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    width: 350px;
-    border-top: 3px solid #000;
-    border-bottom: 3px solid #000;
-}
-@media (max-width: 1000px) {
-    header h1 {
-        width: 75%;
-    }
-}
-
-@media (max-width: 768px) {
-    footer {
-        display: grid;
-        gap: 15px;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .wrapper {
-        width: 25rem;
-    }
-
-    header h1 {
-        width: 90%;
-    }
-}
-@media (max-width: 450px) {
-    #login-link {
-        align-self: center;
-    }
-
-    .wrapper {
-        width: 20rem;
-        height: 35rem;
-        padding: 3rem;
-    }
-
-    .wrapper img {
-        display: none;
-    }
-
-    form {
-        width: 220px;
-    }
-
-    form input {
-        width: 200px;
-    }
 }
 
 /* FOOTER*/
@@ -255,7 +160,7 @@ form {
 footer{
     background-color: #75a1a1; /* Cor de fundo igual à da barra de navegação */
     color: white; /* Cor do texto */
-    padding: 15px; /* Espaçamento interno */
+    padding: 20px; /* Espaçamento interno */
     display: flex;
     justify-content: space-between; /* Alinha os itens à esquerda, no meio e à direita */
 }
