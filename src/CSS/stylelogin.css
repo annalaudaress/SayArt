@@ -141,16 +141,18 @@ h1 {
 
 
 .wrapper {
-    background-color: rgba(217, 217, 217, 0.5);
-    backdrop-filter: blur(3px);
-    padding: 5rem;
+    
+    background-color: rgba(78, 78, 78, 0.068);
+    border: px solid rgb(247, 246, 246);
+    backdrop-filter: blur(20px);
     box-shadow: 0 0 10px #2ec8d0;
+    color: #000000;
+    height: 33.5rem;
+    width: 100rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 37rem;
-    width: 30rem;
-    border-radius: 20px;
+    border-radius: 19px;
 }
 
 /* FOOTER*/
