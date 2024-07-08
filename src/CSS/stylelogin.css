@@ -96,14 +96,14 @@ form button {
     width: 150px;
     height: 50px;
     border-radius: 20px;
-    background-color: #000;
+    background-color: #164c51;;
     color: #fff;
     font-weight: bold;
 }
 
 #forgot-password {
     text-decoration: none;
-    color: #000;
+    color: #164c51;
     font-size: 13px;
     font-weight: bold;
     align-self: flex-end;
