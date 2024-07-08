@@ -57,7 +57,7 @@ button {
 }
 
 .imagens h2{
-    font-size: 15px;
+    font-size: 14px;
     padding-bottom: 11px;
     margin-left: 15px;
     margin-bottom: 1px;
@@ -69,8 +69,15 @@ button {
     height: auto;
     width: auto;
     margin-right: 70px;
-    padding-left: 15px; 
+    margin-left: 15px; 
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+
 }
 
- 
+.imagens img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 
