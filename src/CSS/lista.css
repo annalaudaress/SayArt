@@ -1,0 +1,85 @@
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.navbar {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    background-color: #75a1a1; /* Cor de fundo da navbar */
+    padding: 0% 8%;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    vertical-align: middle; /* Centraliza verticalmente a imagem */
+}
+.main h1{
+    text-align: center;
+    background-color: #75a1a1;
+}
+
+.main div{
+    text-align: center;
+    background-color: #75a1a1;
+}
+.main p{
+    text-align: center;
+    
+}
+/* FOOTER*/
+
+footer{
+    background-color: #75a1a1; /* Cor de fundo igual à da barra de navegação */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    justify-content: space-between; /* Alinha os itens à esquerda, no meio e à direita */
+}
+
+.footer-content{
+    max-width: 1200px; /* Largura máxima do conteúdo do footer */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+.linksFooter ul{
+    list-style-type: none; /* Remove marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.linksFooter ul li{
+    display: block; /* Exibe os itens da lista em linha */
+    margin-right: 200px; /* Espaçamento entre os itens */
+}
+
+.linksFooter ul li a{
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+.linksFooter ul li a:hover{
+    text-decoration: underline;
+}
+
+.p-Footer{
+    flex: 1; /* Ocupa o espaço disponível restante */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.logoFooter{
+    margin-left: 200px; /* Empurra a logo para a direita */
+}
+
+.logoFooter img{
+    width: 100px; /* Tamanho da imagem da logo */
+    height: auto; /* Altura automática para manter a proporção */
+}
