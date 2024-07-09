@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/lista.css">
     <title>Listas</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 
 <body>
-    <!--
-    @Author: Adriano Maciel
-    @Date: 03/06/2024
-    @Reason: Não altere a navbar, exceto se estiver atualizando exclusivamente ela(navbar) e o footer
-    -->
+    <!-- Inicio NavBar -->
     <nav class="navbar">
         <div>
             <!--
@@ -21,20 +19,19 @@
             @Date: 03/06/2024
             @Reason: Os hypertextos em caixalta deverão ser substituídos por ícones   
             -->
-            <img src="img/log_SayArt.jpg" height="10%" width="10%" alt="log_SayArt">
-            <a class="Feed" href="Feed.html">Feed</a>
-            <a class="Categoria" href="Categorias.html">Categorias</a>
-            <a class="Listas" href="Listas.html">Listas</a>
-            <a class="Chats" href="Chats.html">chats</a>
-            <a class="Login" href="Login.html">login</a>
-            <a class="Perfil" href="Perfil.html">perfil</a>
+            <a class="feed" href="feed.html">Feed</a>
+            <a class="categoria" href="categorias.html">Categorias</a>
+            <a class="listas" href="listas.html">Listas</a>
+            <a class="chats" href="chats.html">CHATS</a>
+            <a class="login" href="login.html">LOGIN</a>
+            <a class="perfil" href="perfil.html">PERFIL</a>
         </div>
     </nav>
+    <!-- Final NavBar -->
 
     <div class="main">
         <main>
-            
-            <h1> Melhores Listas para Maratonar</h1>
+            <img src="img/log_SayArt.jpg" height="10%" width="10%" alt="log_SayArt">
             <div>
                  
                 <a class="filmes" href="listas.html">Filmes</a>
@@ -67,20 +64,22 @@
                 <img src="img/filmes/flanc2.jpg" height="20%" width="20%" alt="Recentes">
         </main>
     </div>
-    <!--
-    @Author: Adriano Maciel
-    @Date: 03/06/2024
-    @Reason: Não altere o footer, exceto se estiver atualizando exclusivamente ele(footer) e a navbar
-    -->
     <footer>
-        <p>
-            <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frenquentes</a></li>
-            <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
-            <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
-        </p>
-
-        <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
-
+        <div class="footer-content">
+            <div class="linksFooter">
+                <ul>
+                    <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frequentes</a></li>
+                    <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
+                    <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
+                </ul>
+            </div>
+            <div class="paragrafoFooter">
+                <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
+            </div>
+            <div class="logoFooter">
+                <img class="imgFooter" src="img/log_SayArt.png" alt="Logo SayArt">
+            </div>
+        </div>
     </footer>
 </body>
 
