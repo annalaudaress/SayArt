@@ -1,0 +1,87 @@
+:root {
+    font-size: 16px; /* Base para cálculo de rem */
+}
+
+.main {
+    text-align: center; /* Para centralizar os elementos */
+}
+
+#feed, #trendingTopics {    
+    background-color: #F5F4F4;
+    display: inline-block;
+    height: 100%;
+    width: 45%; /* Ajuste conforme necessário */
+    padding-bottom: 10%;
+    border: 1px solid #0867671A;
+    margin: 5px;
+    vertical-align: top; /* Alinhamento vertical */
+    border-radius: 10px;
+}
+
+#feed {
+    margin-right: 10%;
+}
+
+#trendingTopics {
+    width: 200px;
+}
+
+#trendingTopics img {
+    width: 120px; /* Largura fixa para as imagens */
+    height: 120px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Garante que a imagem mantenha a proporção */
+}
+
+.userComment {
+    background-color: #0867671A;
+    border: 2px solid #0867671A;
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+    width: 660px; /* Ajustado conforme o layout */
+    height: 160px; /* Ajustado conforme o layout */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    display: flex;
+}
+
+.trendingItem {
+    background-color: #0867671A;
+    border: 2px solid #0867671A;
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+.miniProfile, .specificComment {
+    margin: 10px;
+    vertical-align: top; /* Alinhamento vertical */
+}
+
+.miniProfile {
+    background-color: #F5F4F4;
+    height: 80px;
+    border-radius: 10%;
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.miniProfile img, .trendingItem img {
+    width: 100px;
+    height: 100px;
+    flex: 0 0 auto; /* Não cresce, tamanho fixo */
+    max-width: 100%; /* Imagens responsivas */
+    height: auto;
+    border-radius: 50%; /* Arredonda a imagem */
+}
+
+.specificComment p, .trendingItem p {
+    background-color: #F5F4F4;
+    margin-bottom: 6px; /* Espaçamento entre os parágrafos */
+    padding: 2px;
+    padding-right: 6px;
+    border-radius: 2px;
+}
+
+
+.comment {
+    text-align:center;
+    max-width: 100%; /* Imagens responsivas */
+    height: 75%;
+    width: 100%;
+}
