@@ -1,0 +1,83 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Murecho, sans-serif;  
+}
+
+body {
+    min-height: 760px;
+    min-width: 1200px;
+    height:auto;
+    width: auto;
+
+}
+
+.buscar form {
+    
+    display: flex; /* Aplica flexbox ao formulário */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    height: 23px;
+}
+
+#search {
+    width: 700px;
+    height: 35px;
+    margin-right: 10px;
+    border: 2px solid #75a1a1;
+    border-radius: 7px; 
+    text-align:justify;
+    font-size: 15px;
+    padding-left: 5px;
+   
+}
+
+button {
+    height: 35px; /* Ajusta a altura do botão para combinar com o input */ 
+    width: 90px;
+    border-radius: 7px;
+    background-color: #75a1a1;
+    border: 2px solid #75a1a1;
+    color: white;
+
+}
+
+.titulo{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    /*padding: 30px 30px 30px 30px;*/
+    margin-bottom: 10px;  
+}
+
+.imagens h2{
+    font-size: 14px;
+    padding-bottom: 11px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+}
+
+.imagens img{
+    max-width: 200px;
+    max-height: 149px;
+    height: auto;
+    width: auto;
+    margin-right: 70px;
+    margin-left: 15px; 
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.imagens img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
