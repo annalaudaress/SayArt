@@ -76,6 +76,10 @@
 /* FOOTER*/
 
 footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #75a1a1; /* Cor de fundo igual à da barra de navegação */
     color: white; /* Cor do texto */
     padding: 15px; /* Espaçamento interno */
