@@ -97,3 +97,7 @@ body {
 #new-message button:hover {
     background-color: #333;
 }
+
+footer{
+    position: fixed;
+}
