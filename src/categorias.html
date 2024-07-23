@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/homeCategoria.css"> <!-- Inclui o arquivo CSS externo -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
+    
+    <title>Categorias</title>
+
+</head>
+
+<body>
+    <!-- Inicio NavBar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img class="imgLogo" src="img/log_SayArt.png" alt="Logo SayArt">
+        </div>
+        <div class="links">
+            <a class="feed" href="feed.html">Feed</a>
+            <a class="categorias" href="categorias.html">Categorias</a>
+            <a class="listas" href="listas.html">Listas</a>
+        </div>
+
+        <!--Imagens Nav-Bar-->
+        <div class="icon-chats">
+            <a href="chats.html">
+                <img src="img/chat.png" alt="Ícone Chats">
+            </a>
+        </div>
+        <div class="foto-perfil">
+            <a class="perfil" href="perfil.html">
+                <img class="imgPerfil" src="img/user-foto.png" alt="Foto de perfil">
+            </a>
+        </div>
+        <!--Botão Cadastro-Login Nav-Bar-->
+        <div class="b-login">
+            <button>
+                <a class="login" href="login.html">Login</a>
+            </button>
+        </div>
+    </nav>
+    <!-- Final NavBar -->
+
+    <div class="main">
+
+         <section class="buscar">
+            <form>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="O que você está procurando?">
+                <button type="submit">Buscar</button>
+            </form>
+         </section>
+        
+        <div class="tituloCategoria">
+            <h1>Veja as categorias disponíveis para você comentar sobre!</h1>
+        </div>
+        <section class="listas">
+            <ul>
+                <li><a class="animes" href="categorias/categoria_anime.html">ANIMES</a></li>
+                <li><a class="filmes" href="categorias/categoria_filmes.html">FILMES</a></li>
+                <li><a class="livros" href="categorias/categoria_livros.html">LIVROS</a></li>
+                <li><a class="series" href="categorias/categoria_serie.html">SÉRIES</a></li>
+                <li><a class="mangas" href="categorias/categoria_mangas.html">MANGÁS</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <!--FOOTER-->
+
+    <footer>
+        <div class="footer-content">
+            <div class="linksFooter">
+                <ul>
+                    <li><a class="perguntasFrequentes" href="#perguntas">Perguntas frequentes</a></li>
+                    <li><a class="faleConosco" href="#faleConosco">Fale conosco</a></li>
+                    <li><a class="politicaPrivacidade" href="#politicaPrivacidade">Política de privacidade</a></li>
+                </ul>
+            </div>
+            <div class="paragrafoFooter">
+                <p>© - Desenvolvido por SayArt - todos os direitos reservados</p>
+            </div>
+            <div class="logoFooter">
+                <img class="imgFooter" src="../src/img/log_SayArt.png" alt="Logo SayArt">
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

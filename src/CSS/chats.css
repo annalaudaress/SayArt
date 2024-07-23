@@ -1,0 +1,99 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+#chat-layout {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+#recent-conversations,
+#chat-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#recent-conversations {
+    width: 30%;
+}
+
+#chat-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#recent-conversations h2,
+#chat-container #new-message label {
+    color: #333;
+}
+
+#recent-conversations ul {
+    list-style: none;
+    padding: 0;
+}
+
+#recent-conversations li {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#recent-conversations li:hover {
+    background-color: #e9e9e9;
+}
+
+#messages {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    overflow-y: auto;
+}
+
+#new-message {
+    display: flex;
+    align-items: center;
+}
+
+#new-message label {
+    margin-right: 10px;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#new-message button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#new-message button:hover {
+    background-color: #333;
+}

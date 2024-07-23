@@ -12,6 +12,6 @@ Link: https://www.figma.com/design/w29HtJgpsMnxi5IqhATqTC/SayArt-V4?node-id=6104
 * Anna Luiza Laudares Alves Pimenta Silva
 * Adriano Maciel
 * Eudes
-* Iasmin
+* Iasmin Evelin Pedrosa dos Santos
 * Rafaela Pinheiro Gil Ferreira
 
