@@ -82,3 +82,7 @@
     height: 75%;
     width: 100%;
 }
+
+footer{
+    position: fixed;
+}
