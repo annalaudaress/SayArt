@@ -298,3 +298,28 @@ footer{
     width: 100px; /* Tamanho da imagem da logo */
     height: auto; /* Altura automática para manter a proporção */
 }
+
+#nomeError, #passwordError {
+    color: red;
+    margin-bottom: 10%;
+    padding-bottom: 10%;
+}
+
+
+#nomeError::after {
+    content: "Este campo não pode conter números ou caracteres especiais, e, deve ser igual ou maior que 3 caracteres!";
+    position: absolute;
+    background-color: #f44336;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+#nomeError:hover::after {
+    opacity: 1;
+    visibility: visible;
+}

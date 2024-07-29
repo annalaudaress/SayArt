@@ -7,13 +7,14 @@
   <title>Cadastro</title>
   <link rel="stylesheet" href="CSS/stylecadastro.css">
   <link href='https://fonts.googleapis.com/css?family=IBM Plex Serif' rel='stylesheet'>
+  <script src="JAVASCRIPT/validacaoCadastro.js"></script>
 <style>
 body {
     font-family: 'IBM Plex Serif';font-size: 15px;
 }
 </style>
 </head>
-<body>
+<body id="body">
 
     <!-- Inicio NavBar -->
     <nav class="navbar">
@@ -52,9 +53,10 @@ body {
   <main>
   <div class="wrapper">
     <h2>Cadastro</h2>
-     <form action="#">
+     <form action="#" id="cadastroForm">
       <div class="input-box">
-        <input type="text" placeholder="Nome" required>
+        <input id="nome" type="text" placeholder="Nome" required>
+        <p id="nomeError" class="error" style="display: none;">O nome do usuário está inválido!</p>
       </div>
 
       <div class="input-box">
@@ -62,7 +64,8 @@ body {
       </div>
 
       <div class="input-box">
-        <input type="password" placeholder="Senha" required>
+        <input id="password" type="password" placeholder="Senha" required>
+        <p id="passwordError" class="error" style="display: none;">A senha deve possuir mais de 7 dígitos.</p>
       </div>
     <br>
       <button type="submit" class="btn">Cadastrar</button>
