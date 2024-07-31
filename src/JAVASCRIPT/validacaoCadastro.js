@@ -49,8 +49,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         if (!ocorreuErro)
         {
-            // Aqui está falhando
-           // Carregar dinamicamente o HTML -- SEM FUNCIONAR
+           // Carregar dinamicamente o HTML
             fetch('feed.html').then(response => {
                 if (!response.ok) {
                     throw new Error('Erro ao carregar a página do feed');
@@ -58,13 +57,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 return response.text();
             })
             .then(data => {
-                alert('olá')
-                document.getElementById('body').innerHTML = data.getElementById('body');
+                document.getElementById('body').innerHTML = data;
             }).catch(error => {
                 console.error('Erro:', error);
             })
-
-            alert('olá2')
 
         }
     })
