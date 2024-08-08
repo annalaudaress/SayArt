@@ -1,0 +1,72 @@
+CREATE TABLE Usuario (
+    id serial PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Categoria (
+    id serial PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Media (
+    id serial PRIMARY KEY,
+    id_categoria INT NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    resumo TEXT,
+    nota DECIMAL(3, 2),
+    FOREIGN KEY (id_categoria) REFERENCES Categoria(id)
+);
+
+CREATE TABLE Chat (
+    id serial PRIMARY KEY,
+    id_midia INT NOT NULL,
+    intervalo_mensagens TEXT,
+    FOREIGN KEY (id_midia) REFERENCES Media(id)
+);
+
+CREATE TABLE Mensagem (
+    id serial PRIMARY KEY,
+    id_chat INT NOT NULL,
+    id_usuario INT NOT NULL,
+    mensagem TEXT NOT NULL,
+    FOREIGN KEY (id_chat) REFERENCES Chat(id),
+    FOREIGN KEY (id_usuario) REFERENCES Usuario(id)
+);
+
+CREATE TABLE Lista (
+    id serial PRIMARY KEY,
+    id_usuario_criador INT NOT NULL,
+    id_categoria INT NOT NULL,
+    titulo VARCHAR(100) NOT NULL,
+    nota DECIMAL(3, 2),
+    FOREIGN KEY (id_usuario_criador) REFERENCES Usuario(id),
+    FOREIGN KEY (id_categoria) REFERENCES Categoria(id)
+);
+
+CREATE TABLE Midia_Listada (
+    id_midia INT NOT NULL,
+    id_lista INT NOT NULL,
+    PRIMARY KEY (id_midia, id_lista),
+    FOREIGN KEY (id_midia) REFERENCES Media(id),
+    FOREIGN KEY (id_lista) REFERENCES Lista(id)
+);
+
+INSERT into usuario (nome,email,senha)
+VALUES
+('Eudes', 'eudes@gmail.com',123),
+('Adriano', 'adriano@gmail.com',1234),
+('Rafaela','rafaela@gmail.com',123456),
+('Anna', 'Anna@gmail.com', 1234567),
+('Iasmin','iasmin@gmail.com',123456789);
+
+
+INSERT into categoria (nome)
+VALUES,
+('Animes'),
+('Filmes'),
+('Series'),
+('Mangas'),
+('Variedades');
+
